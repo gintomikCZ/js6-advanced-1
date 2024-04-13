@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">home</a>
+        </div>
+        <div>
+          <a href="archiv.html">archiv</a>
+        </div>
+      </nav>
+      <h1>weather app</h1>
+    </header>
+    <main>
+      <section>
+        <form autocomplete="off">
+          <label for="city">city</label>
+          <input type="text" id="city" />
+          <button>submit</button>
+          <div class="error-msg"></div>
+        </form>
+      </section>
+      <section>
+        <ul>
+          <li>
+            <div>city</div>
+            <div></div>
+          </li>
+          <li>
+            <div>temperature</div>
+            <div></div>
+          </li>
+          <li>
+            <div>description</div>
+            <div></div>
+          </li>
+        </ul>
+        <div>
+          <button>save</button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

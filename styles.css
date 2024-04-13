@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cdcdcd;
+  max-width: 300px;
+}
+
+section:nth-child(2) {
+  display: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: .4em .8em;
+  gap: 1rem;
+}
+
+li:not(:last-child) {
+  border-bottom: 1px solid #efefef;
+}
+
+/* li div:first-child {
+  margin-right: 1rem;
+} */
+
+h1 {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.error-msg {
+  color: red;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .9rem;
+  opacity: 0;
+  transition: opacity .5s ease;
+}
+
+.error-msg.visible {
+  opacity: 1;
+}
+
+nav {
+  display: flex;
+  background: #efefef;
+  height: 50px;
+  padding: 0 2rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid #cdcdcd;
+  padding: .15em .4em;
+  white-space:nowrap;
+  font-size: .9rem;
+}
+
+tr:nth-child(even) {
+  background: #efefef;
+}
